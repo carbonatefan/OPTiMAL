@@ -58,7 +58,9 @@ The FWD model requires the packages ggplot2 and RColorBrewer. These only need to
 To run the FWD model, set the correct working directory and execute the script FWDModel in RStudio. This will load the following files
 
 ```
-ghWeightsNodes.csv and mf6.npy
+ghWeightsNodes.csv
+and
+mf6.npy
 ```
 and the sample dataset
 '''
