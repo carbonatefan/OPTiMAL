@@ -22,7 +22,7 @@ Running the GPR model will require MATLAB. Running the FWD model requires R (RSt
 
 ### GPR model
 
-To run the GPR model, start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
+Start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
 
 ```
 ModernCalibrations.xlsx
@@ -35,19 +35,19 @@ SampleDataset.xlsx
 ```
 and will return
 
-```
+
 1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian)
 2) A plot of the predicted error (1 standard deviation vs. the nearest neighbour distances for the sample dataset
 3) A plot of the predicted temperature (with 1 standard deviation error bars) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance
-```
-To run a new dataset, simply format your dataset like the sample spreadsheet and save it in the same folder. Then open OPTiMAL.m and change the spreadsheet name and output file names in lines xxx and run the script.
+
+To predict temperatures from a new dataset, simply format your dataset like the sample spreadsheet and save it in the same folder. Then open OPTiMAL.m and change the spreadsheet name loaded in line XXX and the output file names in lines xxx and run the script.
 
 ### FWD model
 
-Explain what these tests test and why
+The FWD model . .. .
 
 ```
-Give an example
+modtemps
 ```
 
 ## Publishing outputs from this code
