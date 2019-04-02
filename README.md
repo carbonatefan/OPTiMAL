@@ -10,14 +10,14 @@ doi:
 
 This repository contains all of the code and files you will need to run both the GPR model and the FWD model. Start by downloading this repository in its entirety. The contents are as follows:
 
-README.md: The readme you are currently reading.
-OPTiMAL.m: Calculates Nearest Neighbour Distances and temperatures using the GPR model.
-FWDModel.R: Calculates temperatures (posterior predictive density distributions) using the FWD model.
-FWDModelFunctions.R: Contains the functions necessary to execute the FWD Model.
-ModernCalibrations.xlsx: Modern calibration dataset
-SampleDataset.xlsx: Sample GDGT dataset (CITATION!!!)
-mf6.npy: FWD model (built in python) using the modern calibration dataset
-ghWeightsNodes.csv: HELP!!!
+* README.md: The readme you are currently reading.
+* OPTiMAL.m: Calculates Nearest Neighbour Distances and temperatures using the GPR model.
+* FWDModel.R: Calculates temperatures (posterior predictive density distributions) using the FWD model.
+* FWDModelFunctions.R: Contains the functions necessary to execute the FWD Model.
+* ModernCalibrations.xlsx: Modern calibration dataset
+* SampleDataset.xlsx: Sample GDGT dataset (CITATION!!!)
+* mf6.npy: FWD model (built in python) using the modern calibration dataset
+* ghWeightsNodes.csv: HELP!!!
 
 ### Prerequisites
 
