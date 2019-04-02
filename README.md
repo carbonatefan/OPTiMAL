@@ -17,7 +17,7 @@ FWDModelFunctions.R: Contains the functions necessary to execute the FWD Model.\
 ModernCalibrations.xlsx: Modern calibration dataset\
 SampleDataset.xlsx: Sample GDGT dataset (CITATION!!!)\
 mf6.npy: FWD model (built in python) using the modern calibration dataset\
-ghWeightsNodes.csv: HELP!!!\
+ghWeightsNodes.csv: HELP!!!
 
 ### Prerequisites
 
