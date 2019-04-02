@@ -8,39 +8,41 @@ doi:
 
 ## Getting Started
 
-This repository contains all of the code and files you will need to run These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This repository contains all of the code and files you will need to run both the GPR model and the FWD model. Start by downloading this repository in its entirety. The contents are as follows:
+
+CONTENTS???
 
 ### Prerequisites
 
-Running the GPR model will require MATLAB. Running the FWD model will require R.
+Running the GPR model will require MATLAB. Running the FWD model requires R (RStudio recommended).
 
-```
+* [MATLAB](https://mathworks.com/products/matlab.html)
+* [R](https://www.r-project.org/)
+* [RStudio](https://www.rstudio.com/)
 
-```
+### GPR model
 
-### Getting started
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+To run the GPR model, start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
 
 ```
 ModernCalibrations.xlsx
 ```
 
-And repeat
+And the provided sample dataset (citation):
 
 ```
 SampleDataset.xlsx
 ```
+and will return
 
-End with an example of getting some data out of the system or using it for a little demo
+```
+1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian)
+2) A plot of the predicted error (1 standard deviation vs. the nearest neighbour distances for the sample dataset
+3) A plot of the predicted temperature (with 1 standard deviation error bars) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance
+```
+To run a new dataset, simply format your dataset like the sample spreadsheet and save it in the same folder. Then open OPTiMAL.m and change the spreadsheet name and output file names in lines xxx and run the script.
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
+### FWD model
 
 Explain what these tests test and why
 
@@ -48,31 +50,12 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
+## Publishing outputs from this code
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Publications using this code should cite Eley et al., 2019. In addition, the following data are required to ensure your work is reproducible:
+1) Full relative abundance data for all 6 GDGT compounds
+2) Citation of modern calibration dataset used
+3) Publication of full calibration dataset if it has not been previously published elsewhere
 
 ## Authors
 
