@@ -19,7 +19,7 @@ Running the GPR model will require MATLAB. Running the FWD model requires R (RSt
 * [MATLAB](https://mathworks.com/products/matlab.html)
 * [R](https://www.r-project.org/)
 * [RStudio](https://www.rstudio.com/)
-
+  
 ### GPR model
 
 Start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
@@ -33,7 +33,7 @@ And the provided sample dataset (citation):
 ```
 SampleDataset.xlsx
 ```
-and will return
+and will return:
 
 
 1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian)
@@ -44,11 +44,26 @@ To predict temperatures from a new dataset, simply format your dataset like the 
 
 ### FWD model
 
-The FWD model . .. .
+The FWD model requires the packages ggplot2 and RColorBrewer. These only need to be installed once. At the RStudio command line enter: 
+	install.packages("ggplot2")
+	install.packages("RColorBrewer")
+
+To run the FWD model, set the correct working directory in R and execute the script FWDModel in RStudio. This will load the following files
 
 ```
-modtemps
+modtemps, mod, blah blah
 ```
+and the sample dataset
+
+'''
+SampleDataset.xlsx???
+'''
+and return:
+
+1) A spreadsheet containing the raw GDGT data from the sample dataset plus the posterior predicted density distribution (non-Gaussian error) for each sample.
+2) A plot of predicted temperature vs. sample number, with the posterior predictied density for each sample shaded in blue.
+
+NOTE: The FWD model will make temperature predictions regardless of data quality. Screening your data using the nearest neighbour distance calculation in the matlab code OPTiMAL.m first is highly recommended.
 
 ## Publishing outputs from this code
 
