@@ -14,7 +14,7 @@ README.md: The readme you are currently reading.\
 OPTiMAL.m: Calculates Nearest Neighbour Distances and temperatures using the GPR model.\
 FWDModel.R: Calculates temperatures (posterior predictive density distributions) using the FWD model.\
 FWDModelFunctions.R: Contains the functions necessary to execute the FWD Model.\
-ModernCalibrations.xlsx: Modern calibration dataset\
+ModernCalibration.xlsx: Modern calibration dataset\
 SampleDataset.xlsx: Sample GDGT dataset (CITATION!!!)\
 mf6.npy: FWD model (built in python) using the modern calibration dataset\
 ghWeightsNodes.csv: HELP!!!
@@ -32,7 +32,7 @@ Running the GPR model will require MATLAB. Running the FWD model requires R (RSt
 Start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
 
 ```
-ModernCalibrations.xlsx
+ModernCalibration.xlsx
 ```
 
 And the provided sample dataset (citation):
