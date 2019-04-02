@@ -59,13 +59,15 @@ To run the FWD model, set the correct working directory and execute the script F
 
 ```
 ghWeightsNodes.csv
-and
+```
+amd
+```
 mf6.npy
 ```
 and the sample dataset
-'''
+```
 SampleDataset.xlsx
-'''
+```
 and return:
 
 1) A spreadsheet containing the raw GDGT data from the sample dataset plus the posterior predicted density distribution (non-Gaussian error) for each sample.
