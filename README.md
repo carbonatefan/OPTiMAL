@@ -1,10 +1,11 @@
 # OPTiMAL
 
 This directory contains code to predict sea surface temperatures from the relative abundances of GDGTs using two methodologies (GPR model and FWD model) as described in:
-* OPTiMAL: A new machine learning approach for GDGT-based palaeothermometry
-* by Yvette Eley, Will Thomson, Sarah Greene, Ilya Mandel, Kirsty Edgar, James Bendle, and Tom Dunkley Jones
-* Submitted to Climates of the Past.
-* doi:
+
+OPTiMAL: A new machine learning approach for GDGT-based palaeothermometry\
+by Yvette Eley, Will Thomson, Sarah Greene, Ilya Mandel, Kirsty Edgar, James Bendle, and Tom Dunkley Jones\
+Submitted to Climates of the Past.\
+doi:
 
 ## Getting Started
 
@@ -35,7 +36,7 @@ Start by simply running OPTiMAL.m. This will load the provided modern calibratio
 ModernCalibration.xlsx
 ```
 
-And the provided sample dataset (citation):
+and the provided sample dataset (citation):
 
 ```
 SampleDataset.xlsx
