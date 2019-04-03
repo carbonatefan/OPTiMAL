@@ -3,7 +3,7 @@
 This directory contains code to predict sea surface temperatures from the relative abundances of GDGTs using two methodologies (GPR model and FWD model) as described in:
 
 OPTiMAL: A new machine learning approach for GDGT-based palaeothermometry\
-by Yvette Eley, Will Thomson, Sarah Greene, Ilya Mandel, Kirsty Edgar, James Bendle, and Tom Dunkley Jones\
+Yvette Eley, Will Thomson, Sarah Greene, Ilya Mandel, Kirsty Edgar, James Bendle, and Tom Dunkley Jones\
 Submitted to Climates of the Past.\
 doi:
 
