@@ -43,15 +43,15 @@ SampleDataset.xlsx
 ```
 and will return:
 
-1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian)
-2) A plot of the predicted error (1 standard deviation vs. the nearest neighbour distances for the sample dataset
-3) A plot of the predicted temperature (with 1 standard deviation error bars) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance
+1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian).
+2) A plot of the predicted error (1 standard deviation vs. the nearest neighbour distances for the sample dataset.
+3) A plot of the predicted temperature with error bars (1 standard deviation) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance.
 
-To predict temperatures from a new dataset, simply format your dataset like the sample spreadsheet and save it in the same folder. Then open OPTiMAL.m and change the spreadsheet name loaded in line XXX and the output file names in lines xxx and run the script.
+To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open OPTiMAL.m, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
 
 ### FWD model
 
-The FWD model requires the packages ggplot2 and RColorBrewer. These only need to be installed once. At the RStudio command line enter: 
+The FWD model requires the R packages ggplot2 and RColorBrewer. These only need to be installed once. At the RStudio command line enter: 
 	
 	install.packages("ggplot2")
 	install.packages("RColorBrewer")
@@ -69,7 +69,13 @@ as well as the sample dataset
 ```
 SampleDataset.xlsx
 ```
-and return:
+and, using functions contained in
+
+```
+FWDModelFunctions.R
+``
+
+will return:
 
 1) A spreadsheet containing the raw GDGT data from the sample dataset plus the posterior predicted density distribution (non-Gaussian error) for each sample.
 2) A plot of predicted temperature vs. sample number, with the posterior predictied density for each sample shaded in blue.
