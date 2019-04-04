@@ -32,7 +32,7 @@ Running the GPR model will require MATLAB (back compatible to version 2015b). Ru
 * [R](https://www.r-project.org/)
 * [RStudio](https://www.rstudio.com/)
   
-### To run the GPR model
+### To run the GPR model ('OPTiMAL')
 
 Start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
 
@@ -40,7 +40,7 @@ Start by simply running OPTiMAL.m. This will load the provided modern calibratio
 ModernCalibration.xlsx
 ```
 
-and the provided sample dataset (citation):
+and the provided demo dataset (citation):
 
 ```
 SampleDataset.xlsx
@@ -53,14 +53,14 @@ and will return:
 
 To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open OPTiMAL.m, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
 
-### FWD model
+### To run the FWD model
 
 The FWD model requires the R packages ggplot2 and RColorBrewer. These only need to be installed once. At the RStudio command line enter: 
 	
 	install.packages("ggplot2")
 	install.packages("RColorBrewer")
 
-To run the FWD model, set the correct working directory and execute the script FWDModel in RStudio. This will load
+To run the FWD model on the demo dataset, set the correct working directory and execute the script FWDModel in RStudio. This will load
 
 ```
 ghWeightsNodes.csv
@@ -76,7 +76,7 @@ SampleDataset.xlsx
 and, using functions contained in
 
 ```
-FWDModelFunctions.R
+FWDModelFunctions.R,
 ```
 
 will return:
@@ -86,19 +86,21 @@ will return:
 
 NOTE: The FWD model will make temperature predictions for samples with contraindicative Nearest Neighbour Distances. Screening your data by nearest neighbour distance using the MATLAB code OPTiMAL.m is recommended.
 
-## Publishing outputs from this code
+To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open FWDModeL.r, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
+
+### Publishing outputs from this code
 
 Publications using this code should cite Eley et al., 2019. In addition, the following data are required to ensure your work is reproducible:
 1) Full relative abundance data for all 6 GDGT compounds
 2) Citation of modern calibration dataset used
 3) Publication of full calibration dataset if it has not been previously published elsewhere
 
-## Authors
+### Authors
 
-* **Ilya Mandel**
-* **Will Thomson**
-* **Sarah Greene**
+* Ilya Mandel
+* Will Thomson
+* Sarah Greene
 
-## Citation
+### Citation
 
 * Put DOI here.
