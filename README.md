@@ -11,16 +11,18 @@ The GPR model, with its built-in nearest neighbour distance screening (together 
 
 ## Getting Started
 
-This repository contains all of the code and files you will need to run both the GPR model and the FWD model. Start by downloading this repository in its entirety. The contents are as follows:
+This repository contains all of the code and files you will need to run both the GPR model and the FWD model. Start by downloading or cloning this repository in its entirety. The contents are as follows:
 
-README.md: The readme you are currently reading.\
-OPTiMAL.m: Calculates Nearest Neighbour Distances and temperatures using the GPR model.\
-FWDModel.R: Calculates temperatures (posterior predictive density distributions) using the FWD model.\
-FWDModelFunctions.R: Contains the functions necessary to execute the FWD Model.\
-ModernCalibration.xlsx: Modern calibration dataset\
-SampleDataset.xlsx: Sample GDGT dataset (CITATION!!!)\
-mf6.npy: FWD model (built in python) using the modern calibration dataset\
-ghWeightsNodes.csv: Weighting file required by the FWD model
+**README.md**: The readme you are currently reading.\
+**OPTiMAL.m**: Calculates Nearest Neighbour Distances and temperatures using the GPR model.\
+**FWDModel.R**: Calculates temperatures (posterior predictive density distributions) using the FWD model.\
+**FWDModelFunctions.R**: Contains the functions necessary to execute the FWD Model.\
+**ModernCalibration.xlsx**: Modern calibration dataset\
+**SampleDataset.xlsx**: Sample GDGT dataset (CITATION!!!)\
+**mf6.npy**: FWD model (built in python) using the modern calibration dataset\
+**ghWeightsNodes.csv**: Weighting file required by the FWD model
+
+**Note**: If downloading the entire repository as a zipped file, the file mf6.npy will need to be downloaded separately and added to your OPTiMAL directory manually. It is a large file (~600 MB) and so it is stored remotely and will not be captured by a zipped download.
 
 ### Prerequisites
 
