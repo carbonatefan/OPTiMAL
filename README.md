@@ -7,7 +7,7 @@ Yvette Eley, Will Thomson, Sarah Greene, Ilya Mandel, Kirsty Edgar, James Bendle
 Submitted to Climates of the Past.*\
 doi:
 
-The GPR model, with its built-in nearest neighbour distance screening (together called 'OPTiMAL'), is recommended as the default method for predicting SSTs from GDGT distributions. The FWD model is provided for comparison and as an avenue for potential future development. See manuscript for further details.
+The GPR model, with its built-in nearest neighbour distance screening (together called 'OPTiMAL'), is recommended as the default method for predicting SSTs from GDGT distributions. The FWD model is provided as an avenue for potential future development. See manuscript for further details.
 
 ## Getting Started
 
