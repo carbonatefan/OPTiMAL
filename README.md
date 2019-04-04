@@ -7,6 +7,8 @@ Yvette Eley, Will Thomson, Sarah Greene, Ilya Mandel, Kirsty Edgar, James Bendle
 Submitted to Climates of the Past.*\
 doi:
 
+The GPR model, with its built-in nearest neighbour distance screening (together called 'OPTiMAL'), is recommended as the default method for predicting SSTs from GDGT distributions. The FWD model is provided for comparison and as an avenue for potential future development. See manuscript for further details.
+
 ## Getting Started
 
 This repository contains all of the code and files you will need to run both the GPR model and the FWD model. Start by downloading this repository in its entirety. The contents are as follows:
@@ -18,11 +20,11 @@ FWDModelFunctions.R: Contains the functions necessary to execute the FWD Model.\
 ModernCalibration.xlsx: Modern calibration dataset\
 SampleDataset.xlsx: Sample GDGT dataset (CITATION!!!)\
 mf6.npy: FWD model (built in python) using the modern calibration dataset\
-ghWeightsNodes.csv: HELP!!!
+ghWeightsNodes.csv: Weighting file required by the FWD model
 
 ### Prerequisites
 
-Running the GPR model will require MATLAB. Running the FWD model requires R (RStudio recommended).
+Running the GPR model will require MATLAB (back compatible to version 2015b). Running the FWD model requires R (RStudio recommended).
 
 * [MATLAB](https://mathworks.com/products/matlab.html)
 * [R](https://www.r-project.org/)
