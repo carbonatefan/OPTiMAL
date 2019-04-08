@@ -24,43 +24,20 @@ This repository contains all of the code and files you will need to run both the
 
 **Note**: If downloading the entire repository as a zipped file, the file mf6.npy will need to be downloaded separately and added to your OPTiMAL directory manually. It is a large file (~600 MB) and so it is stored remotely and will not be captured by a zipped download.
 
-### Prerequisites
-#### GPR model
+## Prerequisites
+### GPR model
 Running the GPR model will require MATLAB (back compatible to version 2015b). 
 
 * [MATLAB](https://mathworks.com/products/matlab.html)
 
-#### FWD model
-Running the FWD model requires R (RStudio recommended) and Python (directions provided for installing the required packages with or without Anaconda are provided below).
+### FWD model
+Running the FWD model requires R (RStudio recommended) and Python or Anaconda (directions provided for installing the required packages with or without Anaconda are provided).
 
 * [R](https://www.r-project.org/)
 * [RStudio](https://www.rstudio.com/)
 * [Python](https://www.python.org/) or [Anaconda](https://www.anaconda.com/)
-  
-### To run the GPR model ('OPTiMAL')
 
-Start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
-
-```
-ModernCalibration.xlsx
-```
-
-and the provided demo dataset (citation):
-
-```
-SampleDataset.xlsx
-```
-and will return:
-
-1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian).
-2) A plot of the predicted error (1 standard deviation vs. the nearest neighbour distances for the sample dataset.
-3) A plot of the predicted temperature with error bars (1 standard deviation) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance.
-
-To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open OPTiMAL.m, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
-
-### To run the FWD model
-
-The FWD model requires the Python [GPy library](https://sheffieldml.github.io/GPy/). To install via anaconda, open the anaconda prompt and at the command line enter:
+The FWD model requires the Python [GPy library](https://sheffieldml.github.io/GPy/). This only needs to be installed once. To install via anaconda, open the anaconda prompt and at the command line enter:
 
 	conda update scipy
 
@@ -82,6 +59,30 @@ The FWD model also requires the R packages reticulate, robCompositions, ggplot2,
 	install.packages("RColorBrewer")
 
 Lastly, you will need to direct R to your python path. Open the R script FWDModelFunctions.R, set this path on line 15 and save.
+
+## Running the Models
+### GPR model ('OPTiMAL')
+
+Start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
+
+```
+ModernCalibration.xlsx
+```
+
+and the provided demo dataset (citation):
+
+```
+SampleDataset.xlsx
+```
+and will return:
+
+1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian).
+2) A plot of the predicted error (1 standard deviation vs. the nearest neighbour distances for the sample dataset.
+3) A plot of the predicted temperature with error bars (1 standard deviation) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance.
+
+To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open OPTiMAL.m, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
+
+### FWD model
 
 To run the FWD model on the demo dataset, set the correct working directory and execute the script FWDModel in RStudio. This will load
 
