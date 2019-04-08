@@ -25,7 +25,7 @@ This repository contains all of the code and files you will need to run both the
 **Note**: If downloading the entire repository as a zipped file, the file mf6.npy will need to be downloaded separately and added to your OPTiMAL directory manually. It is a large file (~600 MB) and so it is stored remotely and will not be captured by a zipped download.
 
 ## Prerequisites
-### GPR model
+### GPR model ('OPTiMAL')
 Running the GPR model will require MATLAB (back compatible to version 2015b). 
 
 * [MATLAB](https://mathworks.com/products/matlab.html)
@@ -63,7 +63,7 @@ Lastly, you will need to direct R to your python path. Open the R script FWDMode
 ## Running the Models
 ### GPR model ('OPTiMAL')
 
-Start by simply running OPTiMAL.m. This will load the provided modern calibration dataset: 
+To run the GPR model on the demo dataset, simply open and run OPTiMAL.m. This will load the provided modern calibration dataset: 
 
 ```
 ModernCalibration.xlsx
