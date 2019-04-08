@@ -108,9 +108,9 @@ will return:
 1) A spreadsheet containing the raw GDGT data from the sample dataset plus the posterior predicted density distribution (non-Gaussian error) for each sample.
 2) A plot of predicted temperature vs. sample number, with the posterior predictied density shaded in blue.
 
-NOTE: The FWD model will make temperature predictions for samples with contraindicative Nearest Neighbour Distances. Screening your data by nearest neighbour distance using the MATLAB code OPTiMAL.m is recommended.
+NOTE: The FWD model will make temperature predictions for samples with contraindicative Nearest Neighbour Distances. Screening your data by nearest neighbour distance using the MATLAB code OPTiMAL.m is recommended. It will also extrapolate to temperatures beyond the modern calibration dataset, at which point the priors (see line 49 in FWDModel.R) become the primary control on the posterior predictive density distributions. 
 
-To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open FWDModeL.r, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
+To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the demo dataset as a guide and save it in the same directory. Then open FWDModeL.R, change the file name loaded in line 31, set your desired output file names in lines 34 and 37, and run the script.
 
 ## Publishing outputs from this code
 
