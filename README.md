@@ -112,19 +112,15 @@ NOTE: The FWD model will make temperature predictions for samples with contraind
 
 To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open FWDModeL.r, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
 
-### Publishing outputs from this code
+## Publishing outputs from this code
 
 Publications using this code should cite Eley et al., 2019. In addition, the following data are required to ensure your work is reproducible:
 1) Full relative abundance data for all 6 GDGT compounds
 2) Citation of modern calibration dataset used
 3) Publication of full calibration dataset if it has not been previously published elsewhere
 
-### Authors
+## Authors
 
 * Ilya Mandel
 * Will Thomson
 * Sarah Greene
-
-### Citation
-
-* Put DOI here.
