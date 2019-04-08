@@ -19,8 +19,8 @@ This repository contains all of the code and files you will need to run both the
 **FWDModelFunctions.R**: Contains the functions necessary to execute the FWD Model.\
 **ModernCalibration.csv**: Modern calibration dataset (Tierney and Tingley, 2015, [doi:10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29)).\
 **Demo.csv**: Demo GDGT dataset. (Subset of Sluijs et al., 2011, [doi:10.5194/cp-7-47-2011](https://doi.org/10.5194/cp-7-47-2011)).\
-**mf6.npy**: FWD model (built in python) using the modern calibration dataset\
-**ghWeightsNodes.csv**: Weighting file required by the FWD model
+**mf6.npy**: FWD model (built in python) using the modern calibration dataset.\
+**ghWeightsNodes.csv**: Weighting file required by the FWD model.
 
 **Note**: If downloading the entire repository as a zipped file, the file mf6.npy will need to be downloaded separately and added to your OPTiMAL directory manually. It is a large file (~600 MB) and so it is stored remotely and will not be captured by a zipped download.
 
@@ -35,7 +35,7 @@ Running the FWD model requires R (RStudio recommended) and Python or Anaconda (d
 
 * [R](https://www.r-project.org/)
 * [RStudio](https://www.rstudio.com/)
-* [Python](https://www.python.org/) or [Anaconda](https://www.anaconda.com/)
+* [Python](https://www.python.org/) or [Anaconda](https://www.anaconda.com/), which includes a python download
 
 The FWD model requires the Python [GPy library](https://sheffieldml.github.io/GPy/). This only needs to be installed once. To install via anaconda, open the anaconda prompt and at the command line enter:
 
@@ -76,7 +76,7 @@ demo.csv
 ```
 and will return:
 
-1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian).
+1) A new csv file containing the GDGT data from the demo dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian).
 2) A plot of the predicted error (1 standard deviation) vs. the nearest neighbour distances for the demo dataset.
 3) A plot of the predicted temperature with error bars (1 standard deviation) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance.
 
@@ -108,9 +108,9 @@ will return:
 1) A spreadsheet containing the raw GDGT data from the sample dataset plus the posterior predicted density distribution (non-Gaussian error) for each sample.
 2) A plot of predicted temperature vs. sample number, with the posterior predictied density shaded in blue.
 
-NOTE: The FWD model will make temperature predictions for samples with contraindicative Nearest Neighbour Distances. Screening your data by nearest neighbour distance using the MATLAB code OPTiMAL.m is recommended. It will also extrapolate to temperatures beyond the modern calibration dataset, at which point the priors (see line 49 in FWDModel.R) become the primary control on the posterior predictive density distributions. 
-
 To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the demo dataset as a guide and save it in the same directory. Then open FWDModeL.R, change the file name loaded in line 31, set your desired output file names in lines 34 and 37, and run the script.
+
+NOTE: The FWD model will make temperature predictions for samples with contraindicative Nearest Neighbour Distances. Screening your data by nearest neighbour distance using the MATLAB code OPTiMAL.m is recommended. It will also extrapolate to temperatures beyond the modern calibration dataset, at which point the priors (see line 49 in FWDModel.R) become the primary control on the posterior predictive density distributions. 
 
 ## Publishing outputs from this code
 
