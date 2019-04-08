@@ -16,7 +16,7 @@
   ###   The FWD model makes temperature predictions for any and all GDGT distributions.
   ###   This includes data with contraindicative Nearest Neighbour Distances from the modern calibration dataset.
   ###   The FWD model will extrapolate to temperatures beyond the modern calibration dataset
-  ###   at which point the priors (see line 46) become the primary control on the model predictions.
+  ###   at which point the priors (see line 49) become the primary control on the model predictions.
 
 source("FWDModelFunctions.R")
 library("ggplot2")
@@ -26,15 +26,15 @@ library("RColorBrewer")
 
   ###User Inputs###
 
+###Read in new GDGT dataset (6 csv column GDGT)
+###Demo dataset provided: Subset of Sluijs et al., 2011. doi:10.5194/cp-7-47-2011
+MyDataset <- read.csv(file="./Demo.csv", header=TRUE, sep=",")
+
 ###Set the filename for the FWD model output
 OutputFilename='FWDModel_Demo.csv'
 
 ###Set the filename for the FWD model output
 OutputFilename2='FWDModel_PPD_Demo.png'
-
-###Read in new GDGT dataset (6 csv column GDGT)
-###Demo dataset provided: Subset of Sluijs et al., 2011. doi:10.5194/cp-7-47-2011
-MyDataset <- read.csv(file="./Demo.csv", header=TRUE, sep=",")
 
   ###End User Inputs###
 
