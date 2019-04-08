@@ -80,7 +80,7 @@ and will return:
 2) A plot of the predicted error (1 standard deviation) vs. the nearest neighbour distances for the demo dataset.
 3) A plot of the predicted temperature with error bars (1 standard deviation) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance.
 
-To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open OPTiMAL.m, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
+To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the demo dataset as a guide and save it as a csv file in the same directory. Then open OPTiMAL.m, change the filename loaded in line 28, set your desired output file names in lines 33-35, and run the script.
 
 ### FWD model
 
