@@ -17,8 +17,8 @@ This repository contains all of the code and files you will need to run both the
 **OPTiMAL.m**: Calculates Nearest Neighbour Distances and temperatures using the GPR model.\
 **FWDModel.R**: Calculates temperatures (posterior predictive density distributions) using the FWD model.\
 **FWDModelFunctions.R**: Contains the functions necessary to execute the FWD Model.\
-**ModernCalibration.xlsx**: Modern calibration dataset\
-**SampleDataset.xlsx**: Sample GDGT dataset (CITATION!!!)\
+**ModernCalibration.csv**: Modern calibration dataset (Tierney and Tingley, 2015, [doi:10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29)).\
+**Demo.csv**: Sample GDGT dataset. (Subset of Sluijs et al., 2011, [doi:10.5194/cp-7-47-2011](doi:10.5194/cp-7-47-2011)).\
 **mf6.npy**: FWD model (built in python) using the modern calibration dataset\
 **ghWeightsNodes.csv**: Weighting file required by the FWD model
 
@@ -77,7 +77,7 @@ SampleDataset.xlsx
 and will return:
 
 1) A new spreadsheet containing the GDGT data from the sample dataset, the nearest neighbour distances to the modern calibration dataset, predicted SST, and 1 standard deviation on the SST prediction (error is Gaussian).
-2) A plot of the predicted error (1 standard deviation vs. the nearest neighbour distances for the sample dataset.
+2) A plot of the predicted error (1 standard deviation) vs. the nearest neighbour distances for the demo dataset.
 3) A plot of the predicted temperature with error bars (1 standard deviation) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance.
 
 To predict temperatures from a new dataset, format your dataset of GDGT fractional abundance data using the sample dataset as a guide and save it in the same directory. Then open OPTiMAL.m, change the spreadsheet name loaded in line XXX, set your desired output file names in lines xxx, and run the script.
