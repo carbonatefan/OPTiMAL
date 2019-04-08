@@ -18,7 +18,7 @@ This repository contains all of the code and files you will need to run both the
 **FWDModel.R**: Calculates temperatures (posterior predictive density distributions) using the FWD model.\
 **FWDModelFunctions.R**: Contains the functions necessary to execute the FWD Model.\
 **ModernCalibration.csv**: Modern calibration dataset (Tierney and Tingley, 2015, [doi:10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29)).\
-**Demo.csv**: Sample GDGT dataset. (Subset of Sluijs et al., 2011, [doi:10.5194/cp-7-47-2011](https://doi.org/10.5194/cp-7-47-2011)).\
+**Demo.csv**: Demo GDGT dataset. (Subset of Sluijs et al., 2011, [doi:10.5194/cp-7-47-2011](https://doi.org/10.5194/cp-7-47-2011)).\
 **mf6.npy**: FWD model (built in python) using the modern calibration dataset\
 **ghWeightsNodes.csv**: Weighting file required by the FWD model
 
@@ -66,13 +66,13 @@ Lastly, you will need to direct R to your python path. Open the R script FWDMode
 To run the GPR model on the demo dataset, simply open and run OPTiMAL.m. This will load the provided modern calibration dataset: 
 
 ```
-ModernCalibration.xlsx
+ModernCalibration.csv
 ```
 
-and the provided demo dataset (citation):
+and the provided demo dataset:
 
 ```
-SampleDataset.xlsx
+demo.csv
 ```
 and will return:
 
@@ -93,9 +93,9 @@ and
 ```
 mf6.npy
 ```
-as well as the sample dataset
+as well as the demo dataset
 ```
-SampleDataset.xlsx
+Demo.csv
 ```
 and, using functions contained in
 
