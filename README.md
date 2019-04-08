@@ -25,12 +25,17 @@ This repository contains all of the code and files you will need to run both the
 **Note**: If downloading the entire repository as a zipped file, the file mf6.npy will need to be downloaded separately and added to your OPTiMAL directory manually. It is a large file (~600 MB) and so it is stored remotely and will not be captured by a zipped download.
 
 ### Prerequisites
-
-Running the GPR model will require MATLAB (back compatible to version 2015b). Running the FWD model requires R (RStudio recommended).
+#### GPR model
+Running the GPR model will require MATLAB (back compatible to version 2015b). 
 
 * [MATLAB](https://mathworks.com/products/matlab.html)
+
+#### FWD model
+Running the FWD model requires R (RStudio recommended) and Python (directions provided for installing the required packages with or without Anaconda are provided below).
+
 * [R](https://www.r-project.org/)
 * [RStudio](https://www.rstudio.com/)
+* [Python](https://www.python.org/) or [Anaconda](https://www.anaconda.com/)
   
 ### To run the GPR model ('OPTiMAL')
 
@@ -55,10 +60,28 @@ To predict temperatures from a new dataset, format your dataset of GDGT fraction
 
 ### To run the FWD model
 
-The FWD model requires the R packages ggplot2 and RColorBrewer. These only need to be installed once. At the RStudio command line enter: 
+The FWD model requires the Python [GPy library](https://sheffieldml.github.io/GPy/). To install via anaconda, open the anaconda prompt and at the command line enter:
+
+	conda update scipy
+
+followed by:
+
+	conta install -c conda-forge gpy
+
+Or, without anaconda, by first installing [pip](https://pypi.org/project/pip/) and then entering:
+
+	!pip install GPy
+
+at the python command line.
+
+The FWD model also requires the R packages reticulate, robCompositions, ggplot2, and RColorBrewer. These only need to be installed once. At the RStudio command line enter: 
 	
+	install.packages("reticulate")
+	install.packages("robCompositions")
 	install.packages("ggplot2")
 	install.packages("RColorBrewer")
+
+Lastly, you will need to direct R to your python path. Open the R script FWDModelFunctions.R, set this path on line 15 and save.
 
 To run the FWD model on the demo dataset, set the correct working directory and execute the script FWDModel in RStudio. This will load
 
