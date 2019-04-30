@@ -67,8 +67,8 @@ semilogx(distmin,tempancientstd,'.', 'MarkerSize', 16); hold on;
 plot(0.5*ones(size([3:9])),[3:9],'k:', 'LineWidth', 2); hold off;
 grid on
 xlabel('$D_\mathrm{nearest}$','Interpreter', 'latex')
-ylabel('St. Dev. Reconstructed Temp. (°C)')
-%saveas(gcf,Plot1)
+ylabel('St. Dev. Reconstructed Temp. (Â°C)')
+saveas(gcf,Plot1)
 
 %Create figure - OPTiMAL temperature vs. sample number
 figure
@@ -86,7 +86,7 @@ scatter(SampleNumber(distmin>=0.5),tempancient(distmin>=0.5), 15, [0.8 0.8 0.8],
 scatter(SampleNumber(distmin<0.5),tempancient(distmin<0.5), 25, (distmin(distmin<0.5)), 'filled');
 c = colorbar;
 xlabel('Sample Number'),
-ylabel('Reconstructed SST (°C)');
+ylabel('Reconstructed SST (Â°C)');
 c.Label.String = 'D_{nearest}';
 saveas(gcf,Plot2)
 
