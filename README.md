@@ -43,7 +43,7 @@ The FWD model requires the Python [GPy library](https://sheffieldml.github.io/GP
 
 followed by:
 
-	conta install -c conda-forge gpy
+	conda install -c conda-forge gpy
 
 Or, without anaconda, by first installing [pip](https://pypi.org/project/pip/) and then entering:
 
