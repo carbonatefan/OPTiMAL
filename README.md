@@ -4,8 +4,8 @@ This directory contains code to predict sea surface temperatures from the relati
 
 *OPTiMAL: A new machine learning approach for GDGT-based palaeothermometry\
 Yvette Eley, Will Thomson, Sarah Greene, Ilya Mandel, Kirsty Edgar, James Bendle, and Tom Dunkley Jones\
-Submitted to Climates of the Past.*\
-doi:
+Climate of the Past Discussions.*\
+[doi:10.5194/cp-2019-60](https://doi.org/10.5194/cp-2019-60)
 
 The GPR model, with its built-in nearest neighbour distance screening (together called 'OPTiMAL'), is recommended as the default method for predicting SSTs from GDGT distributions. The FWD model is provided as an avenue for potential future development. See manuscript for further details.
 
