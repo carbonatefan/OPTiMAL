@@ -17,7 +17,10 @@ This repository contains all of the code and files you will need to run both the
 **OPTiMAL.m**: Calculates Nearest Neighbour Distances and temperatures using the GPR model.\
 **FWDModel.R**: Calculates temperatures (posterior predictive density distributions) using the FWD model.\
 **FWDModelFunctions.R**: Contains the functions necessary to execute the FWD Model.\
-**ModernCalibration.csv**: Modern calibration dataset (Tierney and Tingley, 2015, [doi:10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29)).\
+**CalibrationOp1.csv**: Modern calibration dataset (Tierney and Tingley, 2015, [doi:10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29)).\
+**CalibrationOp1.csv**: Recommended modern calibration dataset, combining the full core-top data of Tierney & Tingley (2015) [doi.org/10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29) with additional data from Seki et al. (2014) [doi.org/10.1016/j.pocean.2014.04.013](https://doi.org/10.1016/j.pocean.2014.04.013)\
+**CalibrationOp2.csv**: Same as Op1 but excludes data from Seki et al. (2014).\
+**CalibrationOp3.csv**: Same as Op1 but excludes Arctic locations with observed SSTs below 3ºC.\
 **Demo.csv**: Demo GDGT dataset. (Subset of Sluijs et al., 2011, [doi:10.5194/cp-7-47-2011](https://doi.org/10.5194/cp-7-47-2011)).\
 **mf6.npy**: FWD model (built in python) using the modern calibration dataset.\
 **ghWeightsNodes.csv**: Weighting file required by the FWD model.
@@ -66,7 +69,7 @@ Lastly, you will need to direct R to your python path. Open the R script FWDMode
 To run the GPR model on the demo dataset, simply open and run OPTiMAL.m. This will load the provided modern calibration dataset: 
 
 ```
-ModernCalibration.csv
+CalibrationOp1.csv
 ```
 
 and the provided demo dataset:
@@ -80,7 +83,7 @@ and will return:
 2) A plot of the predicted error (1 standard deviation) vs. the nearest neighbour distances for the demo dataset.
 3) A plot of the predicted temperature with error bars (1 standard deviation) vs. sample number. Samples failing the nearest neighbour screening (>0.5) are plotted in grey; samples passing the screening test are coloured according to their nearest neighbour distance.
 
-To predict temperatures from a new dataset, format your GDGT fractional abundance dataset using the demo dataset as a guide and save it as a csv file in the same directory. Then open OPTiMAL.m, change the filename loaded in line 28, set your desired output file names in lines 33-35, and run the script.
+To predict temperatures from a new dataset, format your GDGT fractional abundance dataset using the demo dataset as a guide and save it as a csv file in the same directory. Then open OPTiMAL.m, change the filename loaded in line 28, set your desired output file names in lines 37-39, and run the script. You can also change the modern calibration dataset in line 34; CalibrationOp1 is recommended and set as the default.
 
 ### FWD model
 
@@ -114,7 +117,7 @@ NOTE: The FWD model will make temperature predictions for samples with contraind
 
 ## Publishing outputs from this code
 
-Publications using this code should cite Eley et al., 2019. In addition, the following data are required to ensure your work is reproducible:
+Publications using this code should cite Eley et al., 2019 and this github repository. In addition, the following data are required to ensure your work is reproducible:
 1) Full relative abundance data for all 6 GDGT compounds
 2) Citation of modern calibration dataset used
 3) Publication of full calibration dataset if it has not been previously published elsewhere
