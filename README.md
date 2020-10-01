@@ -17,7 +17,7 @@ This repository contains all of the code and files you will need to run both the
 **OPTiMAL.m**: Calculates Nearest Neighbour Distances and temperatures using the GPR model.\
 **FWDModel.R**: Calculates temperatures (posterior predictive density distributions) using the FWD model.\
 **FWDModelFunctions.R**: Contains the functions necessary to execute the FWD Model.\
-**CalibrationOp1.csv**: Recommended modern calibration dataset, combining the full core-top data of Tierney & Tingley (2015) [doi.org/10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29) with additional data from Seki et al. (2014) [doi.org/10.1016/j.pocean.2014.04.013](https://doi.org/10.1016/j.pocean.2014.04.013)\
+**CalibrationOp1.csv**: Recommended modern calibration dataset, combining the full core-top data of Tierney & Tingley (2015) [doi.org/10.1038/sdata.2015.29](https://doi.org/10.1038/sdata.2015.29) with additional data from Seki et al. (2014) [doi.org/10.1016/j.pocean.2014.04.013](https://doi.org/10.1016/j.pocean.2014.04.013).\
 **CalibrationOp2.csv**: Same as Op1 but excludes data from Seki et al. (2014).\
 **CalibrationOp3.csv**: Same as Op1 but excludes Arctic locations with observed SSTs below 3ºC.\
 **Demo.csv**: Demo GDGT dataset. (Subset of Sluijs et al., 2011, [doi:10.5194/cp-7-47-2011](https://doi.org/10.5194/cp-7-47-2011)).\
