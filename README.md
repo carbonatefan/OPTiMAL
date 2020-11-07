@@ -26,7 +26,7 @@ This repository contains all of the code and files you will need to run both the
 
 **Notes**:
 1. Default calibration data is based on the compiled dataset of Tierney & Tingley 2015 [Global TEX86 Surface Sediment Database v.1.0](https://www.ncdc.noaa.gov/paleo-search/study/18615)). Only sampling locations with full abundance records of GDGT-0 to GDGT-3, Crenarchaeol and the isomer of Crenarchaeol, could be used for the calibration of OPTiMAL. The data from Seki et al. (2014) are included in Tierney and Tingley 2015, but not with the abundances of GDGT compounds. These primary data were obtained directly from Osamu Seki for the purposes of this study and are included in the OPTiMAL calibration dataset.
-2. If downloading the entire repository as a zipped file, the file mf6.npy will need to be downloaded separately and added to your OPTiMAL directory manually. It is a large file (~600 MB) and so it is stored remotely and will not be captured by a zipped download.
+2. If downloading the entire repository as a zipped file, the file mf6.npy will need to be downloaded separately and added to your OPTiMAL directory manually in order to run the FWD model. It is a large file (~600 MB) and so it is stored remotely and will not be captured by a zipped download.
 
 
 ## Prerequisites
