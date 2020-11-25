@@ -30,7 +30,7 @@ ancient=csvread('Demo.csv',1,0); %If your csv does not contain a header row, rem
 %Choose which modern calibration dataset you will use - Op1, Op2, or Op3.
 %CalibrationOp=1 [Recommended] as per Eley et al. 2019; Climates of the Past Discussions doi.org/10.5194/cp-2019-60. This combines the full core-top data of Tierney & Tingley (2015) doi.org/10.1038/sdata.2015.29 with additional data from Seki et al. (2014) doi.org/10.1016/j.pocean.2014.04.013.
 %CalibrationOp=2 Same as Op1 but excludes data from Seki et al. (2014) doi.org/10.1016/j.pocean.2014.04.013. 
-%CalibrationOp=3 Same as Op1 but excludes Arctic locations with observed SSTs below 3ºC.
+%CalibrationOp=3 Same as Op1 but excludes Arctic locations with observed SSTs below 3ÂºC.
 CalibrationOp=1; % CalibrationOp must = 1, 2, or 3.
 
 %Set filenames for outputs
@@ -49,8 +49,7 @@ modern=csvread(CalibrationChoice(CalibrationOp,:),1,0);
 %Calibrate GP regression on full modern data set
 gprMdl = fitrgp(modern(:,1:6),modern(:,7),...
         'KernelFunction','ardsquaredexponential',...
-        'KernelParameters',std(modern(:,[1:6,7])),'Sigma',std(modern(:,7)));
-gprMdl.KernelInformation.KernelParameters./(std(modern(:,[1:6,7])))';   
+        'KernelParameters',std(modern(:,[1:6,7])),'Sigma',std(modern(:,7)));  
 [tempmodern,tempmodernstd,tempmodern95]=predict(gprMdl,modern(:,1:6));
 sigmaL = gprMdl.KernelInformation.KernelParameters(1:end-1); % Learned length scales
 
