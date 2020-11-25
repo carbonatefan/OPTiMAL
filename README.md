@@ -36,7 +36,7 @@ Running the GPR model will require MATLAB (back compatible to version 2015b).
 * [MATLAB](https://mathworks.com/products/matlab.html)
 
 ### FWD model
-Running the FWD model requires R (RStudio recommended) and Python or Anaconda (directions provided for installing the required packages with or without Anaconda are provided).
+Running the FWD model requires R (RStudio recommended) and Python or Anaconda (directions for installing the required packages with or without Anaconda are provided).
 
 * [R](https://www.r-project.org/)
 * [RStudio](https://www.rstudio.com/)
