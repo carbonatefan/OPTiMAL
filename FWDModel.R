@@ -1,7 +1,7 @@
-### This script is published in conjunction with Eley et al., 2019.
+### This script is published in conjunction with Dunkley Jones et al., 2020.
 ### OPTiMAL: A new machine learning approach for GDGT-based
-### palaeothermometry. Climates of the Past. Code and README housed at:
-### https://github.com/carbonatefan/OPTiMAL
+### palaeothermometry. Climates of the Past. doi:10.5194/cp-16-2599-2020
+### Code and README housed at: https://github.com/carbonatefan/OPTiMAL
 
 ### This file:
   ### - Reads in a sample dataset of GDGT relative abundances and, using functions defined in FWDModelFunctions.R,
