@@ -119,7 +119,7 @@ NOTE: The FWD model will make temperature predictions for samples with contraind
 
 ## Publishing outputs from this code
 
-Publications using this code should cite Eley et al., 2019 and this github repository. In addition, the following data are required to ensure your work is reproducible:
+Publications using this code should cite Dunkley Jones et al., 2020 and this github repository. In addition, the following data are required to ensure your work is reproducible:
 1) Full relative abundance data for all 6 GDGT compounds
 2) Citation of modern calibration dataset used
 3) Publication of full calibration dataset if it has not been previously published elsewhere
