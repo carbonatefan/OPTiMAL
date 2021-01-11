@@ -1,6 +1,6 @@
 ### This script is published in conjunction with Dunkley Jones et al., 2020.
 ### OPTiMAL: A new machine learning approach for GDGT-based
-### palaeothermometry. Climates of the Past. doi:10.5194/cp-16-2599-2020
+### palaeothermometry. Climate of the Past. doi:10.5194/cp-16-2599-2020
 ### Code and README housed at: https://github.com/carbonatefan/OPTiMAL
 
 ### This file:
@@ -45,7 +45,7 @@ OutputFilename2='FWDModel_PPD_Demo.png'
 #Load the FWD model
 modelFWD=fitFWD()
 
-#Set priors for FWD model. Recommended values from on Eley, 2019 are 15,10 (15 mean SST, plus/minus 10 (1SD) with Gaussian distribution).
+#Set priors for FWD model. Recommended values from Dunkley Jones et al., 2020 are 15,10 (15 mean SST, plus/minus 10 (1SD) with Gaussian distribution).
 prior = c(15,10)
 PofX=getPofXgivenT(modelFWD)
 
